@@ -17,9 +17,38 @@
             <div class="px-6 pt-16 pb-12 md:max-w-3xl md:mx-auto lg:max-w-full lg:pt-0">
                 <h1 class="text-xl font-semibold text-white uppercase tracking-wider text-center">Coalition for Better Montgomery</h1>
                 <div class="mt-8 lg:mt-8">
-                    <h2 class="mt-4 text-4xl text-center leading-tight xl:text-4xl font-semibold font-display text-white">Make a Donation</h2>
+                    <h2 class="mt-4 text-3xl text-center leading-tight xl:text-3xl font-semibold font-display text-white">Make a Donation for Our Legal Expenses</h2>
                 </div>
 
+                <div class="sm:px-16 py-4 text-white" id="donor-notice">
+                    <ol class="px-2 list-disc mt-4 font-bold">
+                        <li>The name used in payment is my full legal name (first name, middle name, and last name)</li>
+                        <li>My donation will be used for legal expenses of Coalition for Better Montgomery</li>
+                        <li>I will explicitly choose to share my mailing address with Coalition for Better Montgomery while making payment</li>
+                        <li>My donation, if made without mailing address, may be refunded to me</li>
+                    </ol>
+                    <!--
+                    <div class="flex mt-4">
+                        <input type="checkbox" class="block mt-1 mr-4">
+                        <p>I understand that my donation will be used for legal expenses of Coalition for Better Montgomery.</p>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox" class="block mt-1 mr-4">
+                        <p>I agree to explicitly choose to share my mailing address with Coalition for Better Montgomery while making payment.</p>
+                    </div>
+                    <div class="flex">
+                        <input type="checkbox" class="block mt-1 mr-4">
+                        <p>I understand that my donation without mailing address may be refunded.</p>
+                    </div>
+-->
+                    <div class="flex justify-center">
+                        <button class="mt-4 relative h-12 sm:h-auto sm:ml-4 block w-full sm:w-auto px-6 py-3 font-semibold leading-snug bg-gray-700 text-white uppercase tracking-wide rounded-lg shadow-md focus:outline-none focus:shadow-outline hover:bg-gray-600" onclick="proceed()">
+                            I Agree All Above
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hidden" id="paypal-donation-button">
                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"
                       class="mt-4 block w-full sm:w-auto text-center"
                 >
@@ -33,15 +62,22 @@
                     Join our fight for better education of all students of Montgomery County, <br>
                     and for a better future of Montgomery County.
                 </p>
+                </div>
             </div>
 
             <div class="text-center">
                 <p class="text-sm text-gray-500 leading-tight mb-2">Contact@BetterMontgomery.us</p>
-                <p class="text-sm text-gray-500 leading-tight">© 2019 Coalition for Better Montgomery</p>
+                <p class="text-sm text-gray-500 leading-tight">© 2019 Coalition for Better Montgomery (a political action committee)</p>
             </div>
         </div>
     </div>
 </div>
 
+<script>
+    function proceed() {
+        document.getElementById('donor-notice').classList.add('hidden');
+        document.getElementById('paypal-donation-button').classList.remove('hidden');
+    }
+</script>
 </body>
 </html>  
