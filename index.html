@@ -15,24 +15,25 @@
     <div class="relative min-h-screen lg:min-w-3xl xl:min-w-4xl lg:flex lg:items-center lg:justify-center lg:py-20 lg:pl-8 lg:pr-8 bg-no-repeat">
         <div class="lg:pb-16">
             <div class="px-6 pt-16 pb-12 md:max-w-3xl md:mx-auto lg:max-w-full lg:pt-0">
-                <h1 class="text-xl font-semibold text-white uppercase tracking-wider">Coalition for Better Montgomery</h1>
-                <div class="mt-8 lg:mt-16 md:flex justify-between">
-                    <h2 class="mt-4 text-4xl leading-tight xl:text-5xl font-semibold font-display text-white">Make a Donation</h2>
-                    <button class="mt-4 sm:h-auto block w-full sm:w-auto px-6 py-3 font-semibold leading-snug bg-gray-700 text-gray-800 uppercase tracking-wide rounded-lg shadow-md focus:outline-none focus:shadow-outline hover:bg-gray-600 cursor-not-allowed " disabled title="Not active yet">
-                        <span class="">Donate</span>
-                    </button>
+                <h1 class="text-xl font-semibold text-white uppercase tracking-wider text-center">Coalition for Better Montgomery</h1>
+                <div class="mt-8 lg:mt-8">
+                    <h2 class="mt-4 text-4xl text-center leading-tight xl:text-4xl font-semibold font-display text-white">Make a Donation</h2>
                 </div>
-                <p class="mt-3 text-lg lg:max-w-3xl text-gray-400 xl:text-2xl"> Join our fight for better education of all students of Montgomery County, and for a better future of Montgomery County. </p>
-                <div class="mt-10"><p class="text-base xl:text-lg font-medium text-white"> Sign up for our updates. </p>
-                    <form id="form" action="" method="POST" class="relative mt-5 lg:pb-12">
-                        <div class="sm:flex"><input type="email" required="required" placeholder="Enter your email (not active yet)"
-                                                    class="block w-full px-5 py-3 text-lg leading-snug appearance-none bg-white rounded-lg focus:outline-none focus:shadow-outline cursor-not-allowed" disabled title="Not active yet">
-                            <button class="mt-4 relative h-12 sm:mt-0 sm:h-auto sm:ml-4 block w-full sm:w-auto px-6 py-3 font-semibold leading-snug bg-gray-700 text-gray-800 uppercase tracking-wide rounded-lg shadow-md focus:outline-none focus:shadow-outline hover:bg-gray-600 cursor-not-allowed " disabled title="Not active yet">
-                                <span class="">Subscribe</span> </button>
-                        </div> <!----></form>
-                </div>
-            </div>
 
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"
+                      class="mt-4 block w-full sm:w-auto text-center"
+                >
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="BMHNWCVJFUPG6" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+
+                <p class="mt-3 text-lg lg:max-w-3xl text-gray-400 xl:text-2xl text-center">
+                    Join our fight for better education of all students of Montgomery County, <br>
+                    and for a better future of Montgomery County.
+                </p>
+            </div>
 
             <div class="text-center">
                 <p class="text-sm text-gray-500 leading-tight mb-2">Contact@BetterMontgomery.us</p>
